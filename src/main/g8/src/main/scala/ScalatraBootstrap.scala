@@ -1,9 +1,9 @@
-import $package$._
+import app._
 import org.scalatra._
 import javax.servlet.ServletContext
 
 class ScalatraBootstrap extends LifeCycle {
   override def init(context: ServletContext) {
-    context.mount(new $servlet_name$, "/*")
+    context.mount(new $controller_name$, "/*")
   }
 }
